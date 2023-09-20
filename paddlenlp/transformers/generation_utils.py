@@ -22,11 +22,14 @@ import paddle.nn as nn
 import paddle.nn.functional as F
 from paddle.common_ops_import import convert_dtype
 
-try:
-    from paddle.utils import map_structure
-except ImportError:
-    from paddle.fluid.layers.utils import map_structure
-from paddle.fluid.dygraph.base import in_declarative_mode
+# try:
+#     from paddle.utils import map_structure
+# except ImportError:
+#     from paddle.fluid.layers.utils import map_structure
+# from paddle.fluid.dygraph.base import in_declarative_mode
+
+from paddle.utils import map_structure
+from paddle.base.dygraph.base import in_declarative_mode
 
 from paddlenlp.utils.log import logger
 

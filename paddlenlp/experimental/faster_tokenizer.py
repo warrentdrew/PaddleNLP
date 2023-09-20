@@ -15,7 +15,7 @@
 import importlib
 
 import paddle
-import paddle.fluid.core as core
+import paddle.base.core as core
 import paddle.nn as nn
 from paddle.common_ops_import import LayerHelper
 
